@@ -1,0 +1,15 @@
+I recently implemented a production-style AWS VPC architecture with public and private subnets using NAT Gateways, taking AWS official documentation as a reference and validating the setup hands-on.
+𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐎𝐯𝐞𝐫𝐯𝐢𝐞𝐰:
+Designed a custom VPC across multiple Availability Zones
+Created public subnets with Internet Gateway access
+Created private subnets with no direct internet exposure
+Implemented NAT Gateways in public subnets to enable secure outbound access for private resources
+Configured route tables for correct traffic flow between subnets
+Tested connectivity from EC2 instances in private subnets to ensure outbound-only internet access
+This setup follows AWS best-practice network architecture for securely running backend workloads in production environments.
+𝐊𝐞𝐲 𝐓𝐚𝐤𝐞𝐚𝐰𝐚𝐲𝐬:
+Practical clarity on public vs private subnet design
+Real-world usage of NAT Gateway for secure outbound traffic
+Importance of route tables and AZ-level resilience
+Applying AWS networking concepts beyond theory
+𝐑𝐞𝐟𝐞𝐫𝐞𝐧𝐜𝐞: https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat.html
